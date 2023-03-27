@@ -160,3 +160,41 @@
   border-left: 1px solid red;
   border-top: 1px solid red;
 }
+
+.mainProjectImage {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mainLeftOversizeImage {
+  background-color: #fff;
+  z-index: 1;
+  padding: 190px 23px;
+}
+
+.mainRightArrowsContainer {
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  margin-left: 123px;
+  z-index: 3;
+  transform: translate(-50%);
+  display: flex;
+  border: 1px solid red;
+}
+
+.mainRightArrow {
+  background-color: #ffffff;
+  padding: 20px 40px;
+}
+
+.mainRightArrowRotate {
+  transform: rotate(180deg);
+}
+
+.mainRightArrowLine {
+  border-right: 1px solid red;
+}
