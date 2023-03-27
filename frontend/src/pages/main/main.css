@@ -1,0 +1,123 @@
+.mainImage {
+  position: absolute;
+  width: 100%;
+  min-height: 1000px;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  z-index: 2;
+  border-bottom: 1px solid red;
+}
+
+.mainLeft {
+  flex: 1;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 29px 23px;
+}
+
+.line {
+  width: 1px;
+  height: 100%;
+  background-color: red;
+}
+
+.mainRight {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.mainTitle {
+  font-size: 48px;
+  color: #fff;
+}
+
+.mainSubTitle {
+  font-size: 16px;
+  color: #a3a199;
+  margin-top: 20px;
+}
+
+.mainButtons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.mainButton {
+  background-color: #fff;
+  border-radius: 32px;
+
+  color: #110e0f;
+  font-size: 16px;
+  padding: 14px 29px;
+  margin-right: 20px;
+}
+
+.mainButtonInner {
+  color: #fff;
+  font-size: 16px;
+
+  border-radius: 32px;
+  padding: 13px 28px;
+  border: 1px solid #fff;
+}
+
+.mainRightLeft {
+  flex: 1;
+}
+
+.mainRightRight {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  margin: 125px 0px;
+
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.mainRightIcon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.mainRightText {
+  font-size: 36px;
+  color: #fff;
+}
+
+.mainLeftEmpty {
+  flex: 1;
+  padding: 29px 23px;
+}
+
+.line2 {
+  width: 1px;
+  height: 100%;
+  background-color: red;
+}
+
+.mainRightImage {
+  width: 100%;
+}
+
+.mainRightGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
