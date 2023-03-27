@@ -52,7 +52,7 @@ const Main = () => {
       <div className='componentFirst' style={{ backgroundColor: '#15181B' }}>
         <div className='componentSecond' style={{ borderTop: 'none' }}>
           <div className='main'>
-            <div className='mainLeft'>
+            <div className='mainLeft' style={{ backgroundColor: 'transparent' }}>
               <div className='mainTitle'>Property Marketing Excellence</div>
               <div className='mainSubTitle'>
                 Photoplan Are Dedicated Professionals Who Love What We Do. Our Incredible Team Work Tirelessly To
@@ -70,10 +70,26 @@ const Main = () => {
                 <img src={Video360} alt='' style={{ width: '100%' }} />
               </div>
               <div className='mainRightGrid'>
-                <div className='mainRightGridItem'>asd</div>
-                <div className='mainRightGridItem'>asd</div>
-                <div className='mainRightGridItem'>asd</div>
-                <div className='mainRightGridItem'>asd</div>
+                <div className='mainRightGridItem girdLine'>
+                  <div className='mainRightGridTitle'>400+</div>
+                  <div className='mainRightGridText'>projects realised internationally</div>
+                  <StarIcon className='mainRightGridIcon' />
+                </div>
+                <div className='mainRightGridItem'>
+                  <div className='mainRightGridTitle'>23 000</div>
+                  <div className='mainRightGridText'>projects realised internationally</div>
+                  <StarIcon className='mainRightGridIcon' />
+                </div>
+                <div className='mainRightGridItem'>
+                  <div className='mainRightGridTitle'>103</div>
+                  <div className='mainRightGridText'>projects realised internationally</div>
+                  <StarIcon className='mainRightGridIcon' />
+                </div>
+                <div className='mainRightGridItem girdLineBottom'>
+                  <div className='mainRightGridTitle'>14</div>
+                  <div className='mainRightGridText'>projects realised internationally</div>
+                  <StarIcon className='mainRightGridIcon' />
+                </div>
               </div>
             </div>
           </div>

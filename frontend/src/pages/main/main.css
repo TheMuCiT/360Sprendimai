@@ -120,4 +120,43 @@
 .mainRightGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
+
+.mainRightGridItem {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: relative;
+  padding: 70px 0;
+}
+
+.mainRightGridTitle {
+  color: #fff;
+  font-size: 56px;
+}
+
+.mainRightGridText {
+  color: #a3a199;
+  font-size: 16px;
+  max-width: 150px;
+  text-align: left;
+}
+
+.mainRightGridIcon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.girdLine {
+  border-right: 1px solid red;
+  border-bottom: 1px solid red;
+}
+
+.girdLineBottom {
+  border-left: 1px solid red;
+  border-top: 1px solid red;
 }
