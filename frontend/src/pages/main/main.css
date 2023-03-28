@@ -175,6 +175,12 @@
   padding: 190px 23px;
 }
 
+.mainLeftOversizeImage2 {
+  background-color: #fff;
+  z-index: 1;
+  padding: 414px 23px;
+}
+
 .mainRightArrowsContainer {
   position: absolute;
   bottom: 2px;
@@ -197,4 +203,97 @@
 
 .mainRightArrowLine {
   border-right: 1px solid red;
+}
+
+.mainRightFull {
+  background-color: #ffffff;
+  border-left: 1px solid red;
+
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%;
+}
+
+.mainRightFullItem {
+  display: flex;
+  width: 100%;
+  padding: 71px 60px 45px;
+  border-bottom: 1px solid red;
+}
+
+.mainRightFullItemLeft {
+  flex: 2;
+}
+
+.mainRightFullItemRight {
+  flex: 1;
+}
+
+.mainRightFullPlan {
+  color: #15181b;
+  font-size: 12px;
+}
+
+.mainRightFullTitle {
+  color: #15181b;
+  font-size: 48px;
+  margin-top: 19px;
+  margin-bottom: 35px;
+}
+
+.mainRightFullOption {
+  color: #15181b;
+  font-size: 12px;
+  margin-bottom: 25px;
+}
+
+.mainRightFullItemRight {
+  color: #15181b;
+  font-size: 48px;
+}
+
+.mainRightPadding {
+  padding: 0 72px;
+  width: calc(100% - 144px);
+  display: flex;
+  flex-direction: column;
+}
+
+.mainEmailTitle {
+  color: #ffffff;
+  font-size: 48px;
+  margin-bottom: 50px;
+}
+
+.mainEmailSubTitle {
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.mainEmailInput {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.mainEmailInputElement {
+  width: calc(100% - 72px);
+  background-color: transparent;
+  border: 1px solid #515355;
+  padding: 40px 36px;
+
+  color: #a3a199;
+  font-size: 16px;
+}
+
+.mainEmailSubmit {
+  justify-self: flex-end;
+  align-self: flex-end;
+  width: max-content;
+  color: #15181b;
+  font-size: 16px;
+  padding: 15px 40px;
+  background-color: #fff;
+  border-radius: 32px;
 }
