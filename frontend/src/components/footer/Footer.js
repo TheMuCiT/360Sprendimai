@@ -84,7 +84,7 @@ const Footer = () => {
             </div>
           </div>
           <div className='line' />
-          <div className='footerMainRight'>
+          <div className='footerMainRightUnder'>
             <div className='footerMainRightLeft'></div>
             <div className='line' />
             <div className='footerMainRightRight'>

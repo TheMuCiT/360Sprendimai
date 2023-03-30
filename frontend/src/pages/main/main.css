@@ -237,7 +237,7 @@
 
 .mainRightFullItem {
   display: flex;
-  width: 100%;
+  width: calc(100% - 120px);
   padding: 71px 60px 45px;
   border-bottom: 1px solid rgba(225, 226, 227, 0.5);
 }
@@ -248,6 +248,11 @@
 
 .mainRightFullItemRight {
   flex: 1;
+  color: #15181b;
+  font-size: 48px;
+  white-space: nowrap;
+  display: flex;
+  align-items: flex-start;
 }
 
 .mainRightFullPlan {
@@ -266,11 +271,6 @@
   color: #15181b;
   font-size: 12px;
   margin-bottom: 25px;
-}
-
-.mainRightFullItemRight {
-  color: #15181b;
-  font-size: 48px;
 }
 
 .mainRightPadding {
@@ -316,4 +316,7 @@
   padding: 15px 40px;
   background-color: #fff;
   border-radius: 32px;
+}
+
+@media only screen and (max-width: 1150px) {
 }

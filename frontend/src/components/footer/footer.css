@@ -31,6 +31,14 @@
   width: 100%;
 }
 
+.footerMainRightUnder {
+  flex: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
 .footerMainRightContainer {
   display: grid;
   width: 100%;
@@ -212,6 +220,20 @@
   color: #15181b;
   font-size: 36px;
   line-height: 150%;
+}
+
+@media only screen and (max-width: 1440px) {
+  .footerMainLeftUnder {
+    flex: 80%;
+  }
+
+  .footerMainRightLeft {
+    flex: 0;
+  }
+
+  .footerMainRightUnder {
+    flex: 25%;
+  }
 }
 
 @media only screen and (max-width: 1300px) {

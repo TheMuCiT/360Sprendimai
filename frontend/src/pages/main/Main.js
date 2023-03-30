@@ -235,7 +235,9 @@ const Main = () => {
                     <div className='mainRightFullOption'>Up to 100 m2 apartament</div>
                     <div className='mainRightFullOption'>Service & Development</div>
                   </div>
-                  <div className='mainRightFullItemRight'>€ 50.00</div>
+                  <div className='mainRightFullItemRight'>
+                    <span style={{ fontSize: '28px', marginRight: '10px' }}>€</span>50.00
+                  </div>
                 </div>
                 <div className='mainRightFullItem'>
                   <div className='mainRightFullItemLeft'>
@@ -245,7 +247,9 @@ const Main = () => {
                     <div className='mainRightFullOption'>Up to 100 m2 apartament</div>
                     <div className='mainRightFullOption'>Service & Development</div>
                   </div>
-                  <div className='mainRightFullItemRight'>€ 100.00</div>
+                  <div className='mainRightFullItemRight'>
+                    <span style={{ fontSize: '28px', marginRight: '10px' }}>€</span> 100.00
+                  </div>
                 </div>
                 <div className='mainRightFullItem'>
                   <div className='mainRightFullItemLeft'>
