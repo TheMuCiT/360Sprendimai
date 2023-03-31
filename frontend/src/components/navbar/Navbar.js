@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
 import { ReactComponent as MobileMenu } from '../../icons/MobileMenu.svg'
+import { ReactComponent as MobileMenuSettings } from '../../icons/MobileMenuSettings.svg'
 import { ReactComponent as Close } from '../../icons/Close.svg'
 import { ReactComponent as MenuDesktop } from '../../icons/MenuDesktop.svg'
 import { ReactComponent as Logo } from '../../icons/Logo.svg'
@@ -27,11 +28,16 @@ const Navbar = () => {
     <div className='navbar'>
       <div className='navbarMobile'>
         <div className='navbarCenterIcon'>
-          <div className='navbarMobileTopRight '>MobileLeftTitle</div>
+          <div className='navbarMobileTopRight '>
+            <Logo />
+          </div>
         </div>
       </div>
       <div className='navbarMobileButton'>
+        <MobileMenuSettings className='navbarMobileHide' />
+        <div className='navbarRightButton navbarMobileHide'>Book a call</div>
         <MobileMenu className={Mobile ? 'Mobile' : 'Mobile'} onClick={HandleMobileMenu} />
+
         <div className={Mobile ? 'navbarMobileContainerActive' : 'navbarMobileContainer'}>
           <div className={Mobile ? 'navbarMenu active' : 'navbarMenu'}>
             <div className='navbarMenuContainer'>

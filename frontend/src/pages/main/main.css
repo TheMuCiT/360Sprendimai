@@ -70,7 +70,7 @@
 
 .mainButtons {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   margin-top: 20px;
 }
@@ -146,16 +146,18 @@
 .mainRightGridItem {
   width: 100%;
   display: flex;
-  align-items: center;
   justify-content: flex-start;
   flex-direction: column;
   position: relative;
-  padding: 70px 0;
+
+  align-items: flex-start;
+  padding: 40px 0 100px;
 }
 
 .mainRightGridTitle {
   color: #fff;
   font-size: 56px;
+  padding-left: 20px;
 }
 
 .mainRightGridText {
@@ -163,6 +165,7 @@
   font-size: 16px;
   max-width: 150px;
   text-align: left;
+  padding-left: 20px;
 }
 
 .mainRightGridIcon {
@@ -199,6 +202,7 @@
   background-color: #fff;
   z-index: 1;
   padding: 406px 0;
+  border-right: 1px solid #e1e2e3;
 }
 
 .mainRightArrowsContainer {
@@ -258,6 +262,7 @@
 .mainRightFullPlan {
   color: #15181b;
   font-size: 12px;
+  white-space: nowrap;
 }
 
 .mainRightFullTitle {
@@ -318,5 +323,285 @@
   border-radius: 32px;
 }
 
+.customPadding {
+  padding: 0 90px;
+}
+
+.mainEuro {
+  font-size: 28px;
+  margin-right: 10px;
+}
+
+.headerComponent {
+  height: 190px;
+}
+
+.mainTitlePadding {
+  padding: 20px 50px 0;
+}
+
+.mainSubTitlePadding {
+  padding: 0 50px;
+}
+
+.mainButtonPadding {
+  padding: 0 50px 20px;
+}
+
+.mainRightWithWidth {
+  width: 100%;
+}
+.mainRightFullPlanMobile {
+  display: none;
+}
+
+@media only screen and (max-width: 1280px) {
+  .mainTitlePadding {
+    font-size: 40px;
+  }
+}
+
 @media only screen and (max-width: 1150px) {
+  .mainLeft {
+    flex: 2;
+  }
+  .mobileLineHide {
+    display: none;
+  }
+
+  .mainRightRight {
+    margin-right: 150px;
+  }
+
+  .mainRightLeftMobile {
+    flex: 0;
+  }
+
+  .mainRightRight {
+    min-width: 250px;
+  }
+
+  .mainLeftMobileSmall {
+    flex: 1;
+  }
+  .customPadding {
+    padding: 0 45px;
+  }
+  .mainTitle {
+    font-size: 40px;
+  }
+  .mainSubTitle {
+    font-size: 14px;
+  }
+  .mainRightGridTitle {
+    font-size: 40px;
+  }
+  .mainRightGridText {
+    font-size: 14px;
+  }
+  .mainRightFullTitle {
+    font-size: 40px;
+  }
+  .mainRightFullItemRight {
+    font-size: 32px;
+  }
+  .mainEuro {
+    font-size: 22px;
+  }
+  .mainEmailTitle {
+    font-size: 40px;
+  }
+  .mainRightGridItem {
+    align-items: flex-start;
+    padding: 40px 0 100px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .mainRightFullPlanMobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .mainRightFullItemRightHide,
+  .mainRightFullPlanHide {
+    display: none;
+  }
+  .mainRightFullItemRight {
+    flex: 0 1 auto;
+  }
+  .mainRightFullItem {
+    padding: 71px 30px 45px;
+    width: calc(100% - 60px);
+  }
+
+  .mainRightPadding {
+    padding: 0 30px;
+    width: calc(100% - 60px);
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .mobileColumnButtons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .mainButton {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 810px) {
+  .mainRightRight {
+    margin-right: 80px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .mainCustomPadding {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    width: calc(100% - 20px);
+  }
+  .mainRightFullTitle {
+    font-size: 36px;
+  }
+  .mobileColumnButtons {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .mainNoBorder {
+    border: none;
+  }
+  .headerComponent {
+    height: 80px;
+  }
+  .main {
+    flex-direction: column;
+  }
+  .mainLeft {
+    background-color: transparent;
+  }
+  .mainTitlePadding {
+    padding: 20px 0 0;
+  }
+
+  .mainSubTitlePadding {
+    padding: 0;
+  }
+
+  .mainButtonPadding {
+    padding: 0;
+  }
+
+  .lineFullContainer {
+    display: none;
+  }
+
+  .mainBook {
+    display: none;
+  }
+  .mainWithMobilePadding {
+    padding: 80px 0;
+  }
+
+  .mainWithMobilePaddingTop {
+    padding: 120px 0 0;
+    margin: 0;
+  }
+
+  .customPadding {
+    padding: 0;
+  }
+  .mainRightImage {
+    width: calc(100% + 40px);
+  }
+
+  .mainRightGrid {
+    width: calc(100% + 40px);
+  }
+
+  .mainLeftOversizeImage {
+    padding: 100px 0 30px;
+  }
+  .mainProjectImage {
+    position: relative;
+    width: calc(100% + 40px);
+  }
+  .mainRightArrowsContainer {
+    margin-left: 0;
+  }
+
+  .mainRightWithArrows {
+    position: relative;
+  }
+  .withNoMarginBottom {
+    margin-bottom: 0;
+  }
+  .mainRightArrow {
+    padding: 5px 40px;
+  }
+  .mainRightArrowRotate {
+    transform: scale(0.7) rotate(180deg);
+  }
+  .mainRightArrowOriginal {
+    transform: scale(0.7);
+  }
+
+  .mainLeftOversizeImage2 {
+    padding: 0;
+  }
+
+  .mainRightFull {
+    position: relative;
+    width: calc(100% + 40px);
+    border: none;
+  }
+
+  .mainLeftOversizeImage2 {
+    border: none;
+  }
+
+  .mainRightFullItem {
+    padding: 45px 0 30px;
+    width: 100%;
+  }
+  .mainRightFullItemRight {
+    justify-content: flex-end;
+  }
+
+  .mainRightWithWidth {
+    width: calc(100% + 40px);
+  }
+  .mainRightFullItemLeft {
+    margin-left: 20px;
+  }
+  .mainRightFullItemRight {
+    margin-right: 20px;
+  }
+
+  .mainRightMobileEmail {
+    width: 100%;
+  }
+  .mainRightPadding {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .mainButtons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .mainButton {
+    margin-bottom: 20px;
+  }
+
+  .mainRightGridTitle {
+    font-size: 28px;
+  }
 }

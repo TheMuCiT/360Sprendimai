@@ -58,12 +58,28 @@ body {
   border-right: 1px solid rgba(225, 226, 227, 0.5);
 }
 
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 1150px) {
+  .componentSecond {
+    border-left: none;
+    border-right: none;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 700px) {
   .componentSecond {
     margin: 0 20px;
   }
   .main {
     margin-bottom: 100px;
+  }
+
+  .componentSecond {
+    border: none;
+  }
+
+  .line {
+    display: none;
   }
 }
 
