@@ -17,7 +17,10 @@ const Main = () => {
       <img src={mainBC} alt='' className='mainImage' />
 
       <div className='componentFirst' style={{ paddingTop: '125px' }}>
-        <div className='componentSecond headerComponent'>
+        <div className='componentSecond headerComponent noTopLine'>
+          <div className='lineFullContainer'>
+            <div className='lineFull' />
+          </div>
           <div className='mainNoBorder'>
             <div className='mainLeft' style={{ backgroundColor: 'transparent' }}></div>
             <div className='line' />
@@ -29,7 +32,10 @@ const Main = () => {
       </div>
 
       <div className='componentFirst'>
-        <div className='componentSecond'>
+        <div className='componentSecond noTopLine'>
+          <div className='lineFullContainer'>
+            <div className='lineFull' />
+          </div>
           <div className='main'>
             <div className='mainLeft'>
               <div className='mainTitle mainTitlePadding'>Property Marketing Excellence</div>

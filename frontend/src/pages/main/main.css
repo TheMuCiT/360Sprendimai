@@ -18,6 +18,7 @@
 
 .lineFullContainer {
   position: relative;
+  height: 1px;
 }
 
 .lineFull {
@@ -27,7 +28,7 @@
   bottom: 0;
   width: 2500px;
   height: 1px;
-  background-color: rgba(225, 226, 227, 0.5);
+  background-color: rgba(225, 226, 227, 0.2);
 }
 
 .mainNoBorder {
@@ -46,7 +47,7 @@
 .line {
   width: 1px;
   height: 100%;
-  background-color: rgba(225, 226, 227, 0.5);
+  background-color: rgba(225, 226, 227, 0.2);
 }
 
 .mainRight {
@@ -60,11 +61,13 @@
 .mainTitle {
   font-size: 48px;
   color: #fff;
+  line-height: 150%;
 }
 
 .mainSubTitle {
   font-size: 16px;
   color: #a3a199;
+  line-height: 150%;
   margin-top: 20px;
 }
 
@@ -130,7 +133,7 @@
 .line2 {
   width: 1px;
   height: 100%;
-  background-color: rgba(225, 226, 227, 0.5);
+  background-color: rgba(225, 226, 227, 0.2);
 }
 
 .mainRightImage {
@@ -158,6 +161,7 @@
   color: #fff;
   font-size: 56px;
   padding-left: 20px;
+  line-height: 150%;
 }
 
 .mainRightGridText {
@@ -166,6 +170,7 @@
   max-width: 150px;
   text-align: left;
   padding-left: 20px;
+  line-height: 150%;
 }
 
 .mainRightGridIcon {
@@ -175,13 +180,13 @@
 }
 
 .girdLine {
-  border-right: 1px solid rgba(225, 226, 227, 0.5);
-  border-bottom: 1px solid rgba(225, 226, 227, 0.5);
+  border-right: 1px solid rgba(225, 226, 227, 0.2);
+  border-bottom: 1px solid rgba(225, 226, 227, 0.2);
 }
 
 .girdLineBottom {
-  border-left: 1px solid rgba(225, 226, 227, 0.5);
-  border-top: 1px solid rgba(225, 226, 227, 0.5);
+  border-left: 1px solid rgba(225, 226, 227, 0.2);
+  border-top: 1px solid rgba(225, 226, 227, 0.2);
 }
 
 .mainProjectImage {
@@ -195,7 +200,7 @@
 .mainLeftOversizeImage {
   background-color: #fff;
   z-index: 1;
-  padding: 190px 0;
+  padding: 320px 0;
 }
 
 .mainLeftOversizeImage2 {
@@ -213,7 +218,7 @@
   z-index: 3;
   transform: translate(-50%);
   display: flex;
-  border: 1px solid rgba(225, 226, 227, 0.5);
+  border: 1px solid rgba(225, 226, 227, 0.2);
 }
 
 .mainRightArrow {
@@ -226,12 +231,12 @@
 }
 
 .mainRightArrowLine {
-  border-right: 1px solid rgba(225, 226, 227, 0.5);
+  border-right: 1px solid rgba(225, 226, 227, 0.2);
 }
 
 .mainRightFull {
   background-color: #ffffff;
-  border-left: 1px solid rgba(225, 226, 227, 0.5);
+  border-left: 1px solid rgba(225, 226, 227, 0.2);
 
   position: absolute;
   right: 0;
@@ -243,7 +248,7 @@
   display: flex;
   width: calc(100% - 120px);
   padding: 71px 60px 45px;
-  border-bottom: 1px solid rgba(225, 226, 227, 0.5);
+  border-bottom: 1px solid rgba(225, 226, 227, 0.2);
 }
 
 .mainRightFullItemLeft {
@@ -334,6 +339,10 @@
 
 .headerComponent {
   height: 190px;
+}
+
+.noTopLine {
+  border-top: none;
 }
 
 .mainTitlePadding {
