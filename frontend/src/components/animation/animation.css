@@ -1,63 +1,181 @@
-.SlideLeftAnimation {
-     opacity: 1;
-     animation: slideLeft 0.8s ease-in-out forwards;
+.mainLineAnimation {
+  opacity: 0;
+  animation: lineUpAnimation 1s 1s ease-in forwards;
 }
 
-.SlideRightAnimation {
-     opacity: 1;
-     animation: slideRight 0.8s ease-in-out forwards;
+.lineSideAnimation {
+  animation: lineSideAnimation 1s 2s ease-in forwards;
+  opacity: 0;
 }
 
-.SlideUpAnimation {
-     opacity: 1;
-     animation: slideUp 0.8s ease-in-out forwards;
+.verticalLine {
+  width: 1px;
+  height: 100%;
+  background-color: rgba(225, 226, 227, 0.2);
+  opacity: 0;
+  animation: lineUpAnimation 0.8s 3s ease-in forwards;
 }
 
-.SlideDownAnimation {
-     opacity: 1;
-     animation: slideDown 0.8s ease-in-out forwards;
+.mainImageAnimation {
+  animation: mainImageAnimation 1.5s 3.8s ease-in forwards;
 }
 
-@keyframes slideLeft {
-     0% {
-          transform: translateX(-300px);
-          opacity: 0;
-     }
-     100% {
-          transform: translateX(0px);
-          opacity: 1;
-     }
+.navbarAnimation {
+  animation: navbarAnimation 1s 5s ease-in forwards;
 }
 
-@keyframes slideRight {
-     0% {
-          transform: translateX(300px);
-          opacity: 0;
-     }
-     100% {
-          transform: translateX(0px);
-          opacity: 1;
-     }
+.mainLeftOpacityAnimation {
+  opacity: 0;
+  animation: mainOpacity 1s 5.5s ease-in forwards;
 }
 
-@keyframes slideUp {
-     0% {
-          transform: translateY(300px);
-          opacity: 0;
-     }
-     100% {
-          transform: translateY(0px);
-          opacity: 1;
-     }
+.mainRightAnimation {
+  opacity: 0;
+  animation: mainOpacity 1s 6s ease-in forwards;
 }
 
-@keyframes slideDown {
-     0% {
-          transform: translateY(-300px);
-          opacity: 0;
-     }
-     100% {
-          transform: translateY(0px);
-          opacity: 1;
-     }
+/* scroll animation */
+.mainVideoIMGAnimation {
+  opacity: 0;
+  animation: mainOpacity 1s 2.2s ease-in forwards;
+}
+
+.mainVideoTextAnimation {
+  opacity: 0;
+  animation: movingTopWithOpacity 1s 2s ease-in forwards;
+}
+
+.mainGridSideLineAnimation {
+  animation: mainGridSideLineAnimation 1s 0s ease-in forwards;
+}
+
+.mainGridUpLineAnimation {
+  opacity: 0;
+  animation: mainGridUpLineAnimation 1s 1s ease-in forwards;
+}
+.gridItemAnimation1 {
+  opacity: 0;
+  animation: mainOpacity 1s 2.5s ease-in forwards;
+}
+.gridItemAnimation2 {
+  opacity: 0;
+  animation: mainOpacity 1s 2.7s ease-in forwards;
+}
+.gridItemAnimation3 {
+  opacity: 0;
+  animation: mainOpacity 1s 2.9s ease-in forwards;
+}
+.gridItemAnimation4 {
+  opacity: 0;
+  animation: mainOpacity 1s 3.1s ease-in forwards;
+}
+@keyframes PreLoader {
+  0% {
+    opacity: 1;
+  }
+
+  10% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
+@keyframes PreLoaderBackground {
+  0% {
+    transform: translateY(100%);
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes mainImageAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes lineUpAnimation {
+  0% {
+    transform: translateY(100%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes lineSideAnimation {
+  0% {
+    left: 160%;
+    opacity: 1;
+  }
+  100% {
+    left: 50%;
+    opacity: 1;
+  }
+}
+
+@keyframes navbarAnimation {
+  0% {
+    transform: translateY(-100%) translateX(-50%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0) translateX(-50%);
+
+    opacity: 1;
+  }
+}
+
+@keyframes mainOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes movingTopWithOpacity {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes mainGridSideLineAnimation {
+  0% {
+    opacity: 1;
+    transform: translateX(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes mainGridUpLineAnimation {
+  0% {
+    opacity: 1;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

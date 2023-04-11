@@ -25,58 +25,66 @@ const Navbar = () => {
 
   window.addEventListener('resize', WindowChange)
   return (
-    <div className='navbar'>
-      <div className='navbarMobile'>
-        <div className='navbarCenterIcon'>
-          <div className='navbarMobileTopRight '>
-            <Logo />
-          </div>
-        </div>
-      </div>
-      <div className='navbarMobileButton'>
-        <MobileMenuSettings className='navbarMobileHide' />
-        <div className='navbarRightButton navbarMobileHide'>Book a call</div>
-        <MobileMenu className={Mobile ? 'Mobile' : 'Mobile'} onClick={HandleMobileMenu} />
-
+    <>
+      <div className='mobileNavBarMenu'>
         <div className={Mobile ? 'navbarMobileContainerActive' : 'navbarMobileContainer'}>
           <div className={Mobile ? 'navbarMenu active' : 'navbarMenu'}>
             <div className='navbarMenuContainer'>
               <div className='navbarMobileTop'>
-                <div className='navbarMobileTopRight menuOpen'>MobileMenuText</div>
+                <div className='navbarMobileTopRight menuOpen'>
+                  <Logo />
+                </div>
                 <div className='navbarMobileTopLeft'>
                   <Close className='CloseIcon' onClick={HandleMobileMenu} />
                 </div>
               </div>
               <div className='navbarMobileMain'>
-                <div className='navbarCenterLink opacity7'>MobileMenuMiddleText</div>
-                <div className='navbarCenterLink navbarRightButton'>MobileMenuButton</div>
+                <div className='navbarCenterLink opacity7'>Pradzia</div>
+                <div className='navbarCenterLink opacity7'>Projektai</div>
+                <div className='navbarCenterLink opacity7'>Apie Mus</div>
+                <div className='navbarCenterLink opacity7'>Funkcionalumas</div>
+                <div className='navbarCenterLink opacity7'>Kainorastis</div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div className='navbar navbarAnimation'>
+        <div className='navbarMobile'>
+          <div className='navbarCenterIcon'>
+            <div className='navbarMobileTopRight '>
+              <Logo />
+            </div>
+          </div>
+        </div>
+        <div className='navbarMobileButton'>
+          <MobileMenuSettings className='navbarMobileHide' />
+          <div className='navbarRightButton navbarMobileHide'>Book a call</div>
+          <MobileMenu className={Mobile ? 'Mobile' : 'Mobile'} onClick={HandleMobileMenu} />
+        </div>
 
-      <div className='navbarContainer SlideRightAnimation'>
-        <div className='navbarLeft'>
-          <div className='navbarLeftLogo '>
-            <Logo />
+        <div className='navbarContainer '>
+          <div className='navbarLeft'>
+            <div className='navbarLeftLogo '>
+              <Logo />
+            </div>
           </div>
-        </div>
-        <div className='navbarCenter'>
-          <div className='navbarCenterItem'>Home</div>
-          <div className='navbarCenterItem'>Pricing</div>
-          <div className='navbarCenterItem'>Project</div>
-          <div className='navbarCenterItem'>About Company</div>
-          <div className='navbarCenterItem'>Contact</div>
-        </div>
-        <div className='navbarRight'>
-          <div className='navbarRightItemCustom'>
-            <MenuDesktop />
+          <div className='navbarCenter'>
+            <div className='navbarCenterItem'>Pradzia</div>
+            <div className='navbarCenterItem'>Projektai</div>
+            <div className='navbarCenterItem'>Apie Mus</div>
+            <div className='navbarCenterItem'>Funkcionalumas</div>
+            <div className='navbarCenterItem'>Kainorastis</div>
           </div>
-          <div className='navbarRightButton'>Book a call</div>
+          <div className='navbarRight'>
+            <div className='navbarRightItemCustom'>
+              <MenuDesktop />
+            </div>
+            <div className='navbarRightButton'>Susisiekti</div>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 

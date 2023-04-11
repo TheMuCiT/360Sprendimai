@@ -6,6 +6,7 @@
   top: 0;
   left: 0;
   z-index: 0;
+  opacity: 0;
 }
 
 .main {
@@ -26,7 +27,7 @@
   left: 50%;
   transform: translate(-50%);
   bottom: 0;
-  width: 2500px;
+  width: 100vw;
   height: 1px;
   background-color: rgba(225, 226, 227, 0.2);
 }
@@ -127,7 +128,8 @@
 
 .mainLeftEmpty {
   flex: 1;
-  padding: 29px 0;
+  padding: 0px 0;
+  height: 100%;
 }
 
 .line2 {
@@ -141,9 +143,46 @@
 }
 
 .mainRightGrid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
   width: 100%;
+  position: relative;
+}
+.mainRightGridLeft {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.mainRightGridRight {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.mainGridLine {
+  width: 1px;
+  height: 100%;
+  background-color: rgba(225, 226, 227, 0.2);
+}
+
+.mainGridLineAbsolute {
+  position: absolute;
+  background-color: rgba(225, 226, 227, 0.2);
+  height: 1px;
+  width: 100%;
+  top: 50%;
+}
+
+.mainGridLineAbsoluteTop {
+  position: absolute;
+  background-color: rgba(225, 226, 227, 0.2);
+  height: 1px;
+  width: 100%;
+  top: 0;
 }
 
 .mainRightGridItem {
@@ -155,6 +194,7 @@
 
   align-items: flex-start;
   padding: 40px 0 100px;
+  height: 133px;
 }
 
 .mainRightGridTitle {
@@ -179,16 +219,6 @@
   right: 0;
 }
 
-.girdLine {
-  border-right: 1px solid rgba(225, 226, 227, 0.2);
-  border-bottom: 1px solid rgba(225, 226, 227, 0.2);
-}
-
-.girdLineBottom {
-  border-left: 1px solid rgba(225, 226, 227, 0.2);
-  border-top: 1px solid rgba(225, 226, 227, 0.2);
-}
-
 .mainProjectImage {
   position: absolute;
   right: 0;
@@ -200,7 +230,7 @@
 .mainLeftOversizeImage {
   background-color: #fff;
   z-index: 1;
-  padding: 320px 0;
+  padding: 250px 0;
 }
 
 .mainLeftOversizeImage2 {
@@ -248,7 +278,11 @@
   display: flex;
   width: calc(100% - 120px);
   padding: 71px 60px 45px;
-  border-bottom: 1px solid rgba(225, 226, 227, 0.2);
+  border-bottom: 1px solid #e1e2e3;
+}
+
+.mainRightFullItem:last-child {
+  border-bottom: none;
 }
 
 .mainRightFullItemLeft {
@@ -364,6 +398,44 @@
   display: none;
 }
 
+.mainLeftCustom {
+  background-color: transparent;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  overflow: hidden;
+}
+
+.mainLeftCustom2 {
+  background-color: transparent;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  overflow: hidden;
+}
+
+.mainVideoIMG {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.mainVideoTextAnimationIndex {
+  opacity: 0;
+}
+
+.mainVideoIMGAnimationIndex {
+  opacity: 0;
+}
+
+.mainGridLineIndex {
+  opacity: 0;
+}
+
 @media only screen and (max-width: 1280px) {
   .mainTitlePadding {
     font-size: 40px;
@@ -470,11 +542,6 @@
 }
 
 @media only screen and (max-width: 700px) {
-  .mainCustomPadding {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
-    width: calc(100% - 20px);
-  }
   .mainRightFullTitle {
     font-size: 36px;
   }
@@ -612,5 +679,10 @@
 
   .mainRightGridTitle {
     font-size: 28px;
+  }
+
+  .mainCustomPadding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
   }
 }
